@@ -1,0 +1,53 @@
+[1mdiff --git a/SPEC.md b/SPEC.md[m
+[1mindex 0c354b7..59d1e9a 100644[m
+[1m--- a/SPEC.md[m
+[1m+++ b/SPEC.md[m
+[36m@@ -19,24 +19,24 @@[m [mThe product is the same white T-shirt throughout the comparison. The baseline of[m
+ [m
+ The primary need guides the page. Give the secondary card one contrasting need to check that same page; keep both cards brief.[m
+ [m
+[31m-| Tiny card                             | Primary audience          | Secondary audience        |[m
+[31m-| ------------------------------------- | ------------------------- | ------------------------- |[m
+[31m-| Person in a concrete situation        | Not chosen yet            | Not chosen yet            |[m
+[31m-| Goal or meaning they seek             | Not chosen yet            | Not chosen yet            |[m
+[31m-| Concern before choosing               | Not chosen yet            | Not chosen yet            |[m
+[31m-| What the page should help them decide | Not chosen yet            | Not chosen yet            |[m
+[31m-| Evidence or assumption                | Assumption; not validated | Assumption; not validated |[m
+[32m+[m[32m| Tiny card | Primary audience | Secondary audience |[m
+[32m+[m[32m|---|---|---|[m
+[32m+[m[32m| Person in a concrete situation | College student aged 18–24 putting together an everyday campus outfit | Urban creative aged 22–30 choosing clothing for work and social activities |[m
+[32m+[m[32m| Goal or meaning they seek | Confidence, individuality, and affordable streetwear styling | Creative self-expression and versatility |[m
+[32m+[m[32m| Concern before choosing | Whether a simple white T-shirt fits their streetwear aesthetic | Whether the shirt complements multiple personal styles |[m
+[32m+[m[32m| What the page should help them decide | Whether UNBOUND suits their everyday outfits and preferred size | Whether the understated product works with their wardrobe |[m
+[32m+[m[32m| Evidence or assumption | Hypothesis; not validated by customer research | Hypothesis; not validated by customer research |[m
+ [m
+ ## Early brand brief[m
+ [m
+[31m-| Decision                                 | Agreement      |[m
+[31m-| ---------------------------------------- | -------------- |[m
+[31m-| Brand name                               | Not chosen yet |[m
+[31m-| One-sentence promise                     | Not chosen yet |[m
+[31m-| Primary archetype: the brand's character | Not chosen yet |[m
+[31m-| Three voice traits                       | Not chosen yet |[m
+[31m-| One example line in this voice           | Not chosen yet |[m
+[31m-| Learner's predicted audience effect      | Not chosen yet |[m
+[32m+[m[32m| Decision | Agreement |[m
+[32m+[m[32m|---|---|[m
+[32m+[m[32m| Brand name | UNBOUND |[m
+[32m+[m[32m| One-sentence promise | A versatile everyday essential that lets your personal style stand out. |[m
+[32m+[m[32m| Primary archetype: the brand's character | The Rebel — independent and expressive |[m
+[32m+[m[32m| Three voice traits | Bold, direct, authentic |[m
+[32m+[m[32m| One example line in this voice | Wear your own way. |[m
+[32m+[m[32m| Learner's predicted audience effect | College streetwear enthusiasts may associate UNBOUND with confidence and individuality. This is a prediction, not a validated result. |[m
+ [m
+ ## Visual decision[m
+ [m
+[36m@@ -49,7 +49,7 @@[m [mA simple original SVG wordmark is enough. Show small-size and one-color presenta[m
+ | Shared headline / support / action                | Not chosen yet        |[m
+ | Modernist preview, reference, and annotations     | Not chosen yet        |[m
+ | Postmodernist preview, reference, and annotations | Not chosen yet        |[m
+[31m-| Chosen direction and reason                       | Not chosen yet        |[m
+[32m+[m[32m| Chosen direction and reason                       | Postmodernist — expressive typography, asymmetrical composition, and bold contrast communicate individuality to college streetwear enthusiasts. Navigation and shopping controls remain straightforward.        |[m
+ | Original SVG logo                                 | Not chosen yet        |[m
+ | Monochrome and small-size variants                | Not chosen yet        |[m
+ | Logo review at actual use size                    | Not checked yet       |[m
