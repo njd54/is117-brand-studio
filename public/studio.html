@@ -5,12 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="IS117 Brand Studio: turn one plain white T-shirt into a deliberate brand and website, with an AI coach and decisions you can explain."
+      content="UNBOUND brand studio: compare modernist and postmodernist designs for a white streetwear T-shirt."
     />
-    <title>Same shirt. Different story. — IS117 Brand Studio</title>
+    <title>UNBOUND — Brand Studio</title>
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="studio.css" />
+    <style>
+      /* Scoped hero comparison: no changes to existing studio.css required. */
+      .unbound-hero-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem;
+        margin: 2rem 0;
+      }
+      .unbound-preview {
+        position: relative;
+        min-width: 0;
+        overflow: hidden;
+        padding: 1.3rem;
+        border: 2px solid #111;
+      }
+      .unbound-preview-kicker {
+        font:
+          700 0.76rem/1.4 ui-monospace,
+          monospace;
+        letter-spacing: 0.08em;
+      }
+      .unbound-preview img {
+        display: block;
+        width: 100%;
+        height: 270px;
+        object-fit: contain;
+      }
+      .unbound-preview h3 {
+        font-size: clamp(1.6rem, 3vw, 3rem);
+        line-height: 0.95;
+        overflow-wrap: anywhere;
+        margin: 0.8rem 0;
+      }
+      .unbound-preview-copy p {
+        line-height: 1.5;
+      }
+      .unbound-preview-copy a {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.75rem 1rem;
+        font-weight: 800;
+        text-decoration: none;
+      }
+      .unbound-preview-note {
+        font-size: 0.86rem;
+        line-height: 1.5;
+        margin-top: 1.5rem;
+        border-top: 1px solid currentColor;
+        padding-top: 0.8rem;
+      }
+      .unbound-modern {
+        background: #f4f1e9;
+        color: #111;
+      }
+      .unbound-modern h3 {
+        font-weight: 700;
+        letter-spacing: -0.035em;
+      }
+      .unbound-modern .unbound-preview-copy a {
+        background: #111;
+        color: #fff;
+      }
+      .unbound-postmodern {
+        background: #111;
+        color: #f4f1e9;
+        transform: rotate(-0.5deg);
+      }
+      .unbound-postmodern img {
+        transform: rotate(-7deg) scale(1.06);
+      }
+      .unbound-postmodern h3 {
+        font-weight: 900;
+        font-style: italic;
+        letter-spacing: -0.065em;
+        text-transform: uppercase;
+        transform: rotate(-2deg);
+      }
+      .unbound-postmodern .unbound-preview-copy a {
+        background: #c92c23;
+        color: #fff;
+        transform: rotate(-2deg);
+      }
+      .unbound-stamp {
+        position: absolute;
+        top: 4.5rem;
+        right: -2rem;
+        background: #c92c23;
+        color: #fff;
+        padding: 0.5rem 2rem;
+        transform: rotate(15deg);
+        font:
+          800 0.7rem ui-monospace,
+          monospace;
+        z-index: 1;
+      }
+      @media (max-width: 700px) {
+        .unbound-hero-grid {
+          grid-template-columns: 1fr;
+        }
+        .unbound-preview img {
+          height: 220px;
+        }
+        .unbound-postmodern {
+          transform: none;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .unbound-postmodern,
+        .unbound-postmodern img,
+        .unbound-postmodern h3,
+        .unbound-postmodern .unbound-preview-copy a {
+          transform: none;
+        }
+      }
+    </style>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -18,11 +133,11 @@
       <a
         class="brand-link"
         href="index.html"
-        aria-label="Your Brand storefront home"
+        aria-label="UNBOUND storefront home"
         ><img
           class="wordmark"
-          src="assets/wordmark.svg"
-          alt="Neutral starter wordmark"
+          src="assets/unbound-logo.svg"
+          alt="UNBOUND wordmark"
           width="175"
           height="26"
       /></a>
@@ -33,7 +148,7 @@
           >Studio <span aria-hidden="true">↗</span></a
         >
       </nav>
-      <span class="micro-label">IS117 / Brand Studio</span>
+      <span class="micro-label">UNBOUND / Brand Studio</span>
     </header>
     <main id="main">
       <section
@@ -41,13 +156,13 @@
         aria-labelledby="studio-title"
       >
         <p class="eyebrow">
-          <span class="status-dot" aria-hidden="true"></span> A design studio
-          with an AI coach
+          <span class="status-dot" aria-hidden="true"></span> UNBOUND / Brand
+          001
         </p>
-        <h1 id="studio-title">Same shirt.<br />Different story.</h1>
+        <h1 id="studio-title">ONE SHIRT.<br />NO RULES.</h1>
         <div class="hero-summary">
           <p>
-            Everyone starts with one plain white T-shirt. Your work is to decide
+            UNBOUND begins with one plain white T-shirt. Our goal is to show
             <strong
               >who it is for, what the brand means, and how the website makes
               that visible.</strong
@@ -74,8 +189,8 @@
 
       <section class="studio-intro wrap" aria-labelledby="why-title">
         <div>
-          <p class="eyebrow">The challenge</p>
-          <h2 id="why-title">Design changes<br />what a product means.</h2>
+          <p class="eyebrow">Our direction</p>
+          <h2 id="why-title">WEAR YOUR<br />OWN WAY.</h2>
         </div>
         <div>
           <p class="lead">
@@ -181,37 +296,140 @@
         aria-labelledby="comparison-title"
       >
         <div>
-          <p class="eyebrow">An early comparison</p>
-          <h2 id="comparison-title">Two ways to<br />organize a message.</h2>
+          <p class="eyebrow">BRAND-001 / Side-by-side design study</p>
+          <h2 id="comparison-title">SAME SHIRT.<br />TWO DIRECTIONS.</h2>
           <p class="comparison-description">
-            These small studies introduce a contrast, not a finished brand. Try
-            both approaches with your own audience in mind.
+            Both previews use the identical white T-shirt artwork, headline,
+            supporting copy, and action. Only the visual presentation changes.
           </p>
         </div>
-        <div class="comparison-grid">
-          <article class="direction-card">
-            <div class="direction-sketch modern-sketch" aria-hidden="true">
-              <i></i><i></i><i></i>
+        <div class="unbound-hero-grid">
+          <article
+            class="unbound-preview unbound-modern"
+            aria-labelledby="modern-title"
+          >
+            <p class="unbound-preview-kicker" id="modern-title">
+              01 / MODERNIST
+            </p>
+            <img
+              src="assets/white-shirt.svg"
+              alt="Plain white short-sleeved T-shirt, modernist layout"
+              width="800"
+              height="880"
+              loading="lazy"
+            />
+            <div class="unbound-preview-copy">
+              <h3>WEAR YOUR OWN WAY.</h3>
+              <p>One essential. Endless ways to express yourself.</p>
+              <a href="index.html#product-title"
+                >SHOP THE TEE <span aria-hidden="true">↗</span></a
+              >
             </div>
-            <h3>Modernist approach</h3>
-            <p>
-              Explore a clear grid, restrained elements, and a direct hierarchy.
+            <p class="unbound-preview-note">
+              Orderly grid, restrained palette, balanced spacing, and
+              predictable hierarchy.
             </p>
           </article>
-          <article class="direction-card">
-            <div class="direction-sketch postmodern-sketch" aria-hidden="true">
-              <i></i>
+          <article
+            class="unbound-preview unbound-postmodern"
+            aria-labelledby="postmodern-title"
+          >
+            <p class="unbound-preview-kicker" id="postmodern-title">
+              02 / POSTMODERNIST — CHOSEN
+            </p>
+            <span class="unbound-stamp" aria-hidden="true">NO RULES / 001</span>
+            <img
+              src="assets/white-shirt.svg"
+              alt="Same plain white short-sleeved T-shirt, postmodernist layout"
+              width="800"
+              height="880"
+              loading="lazy"
+            />
+            <div class="unbound-preview-copy">
+              <h3>WEAR YOUR OWN WAY.</h3>
+              <p>One essential. Endless ways to express yourself.</p>
+              <a href="index.html#product-title"
+                >SHOP THE TEE <span aria-hidden="true">↗</span></a
+              >
             </div>
-            <h3>Postmodernist approach</h3>
-            <p>
-              Explore contrast, layering, mixed references, and a more
-              expressive hierarchy.
+            <p class="unbound-preview-note">
+              Oversized type, asymmetry, layered label, high contrast, and
+              signal-red accent.
             </p>
           </article>
-          <p class="comparison-caption">
-            Simplified visual studies. Neither approach automatically fits every
-            audience; explain what your comparison reveals.
-          </p>
+        </div>
+        <p class="guide-note">
+          Design rationale: Youth is a period of expressing who you are and
+          discovering your identity. We predict that a bold postmodernist
+          presentation will resonate with college streetwear enthusiasts. This
+          is our design hypothesis, not a measured audience result. The actual
+          storefront keeps its size selector and demo bag clear and usable.
+        </p>
+        <p class="guide-note">
+          Research note: These are original coded comparisons informed by the
+          historical design references below, not reproductions of those works.
+          The references explain visual choices; they do not establish measured
+          audience preferences.
+        </p>
+        <div class="example-chain">
+          <div class="example-step">
+            <span class="micro-label">Modernism / Herbert Bayer</span>
+            <h3>Bauhaus typography</h3>
+            <p>
+              Bayer's typographic experiments emphasize purposeful lettering and
+              visual organization. The modernist UNBOUND preview similarly uses
+              restrained typography and a clear reading order.
+            </p>
+            <p>
+              <a href="https://www.moma.org/collection/works/5101"
+                >View the Museum of Modern Art reference</a
+              >
+            </p>
+          </div>
+          <div class="example-step">
+            <span class="micro-label">Modernism / Swiss graphic design</span>
+            <h3>International Typographic Style</h3>
+            <p>
+              Swiss modernist design is associated with grids, readable
+              typography, and disciplined spacing. These ideas informed the
+              modernist preview's orderly layout and predictable hierarchy.
+            </p>
+            <p>
+              <a
+                href="https://www.nb.admin.ch/en/the-international-style-1950-1970"
+                >View the Swiss National Library reference</a
+              >
+            </p>
+          </div>
+          <div class="example-step">
+            <span class="micro-label">Postmodernism / Paula Scher</span>
+            <h3>The Diva is Dismissed (1994)</h3>
+            <p>
+              Scher's expressive typography demonstrates how type can convey
+              energy and personality. UNBOUND draws on that approach through its
+              oversized, emphatic headline and bold contrast.
+            </p>
+            <p>
+              <a href="https://www.moma.org/collection/works/8837"
+                >View the Museum of Modern Art reference</a
+              >
+            </p>
+          </div>
+          <div class="example-step">
+            <span class="micro-label">Postmodernism / April Greiman</span>
+            <h3>Your Turn, My Turn (1983)</h3>
+            <p>
+              Greiman's experimental compositions provide a reference for
+              layered, unconventional arrangements. UNBOUND uses a tilted
+              product image and overlapping stamp to create a similar sense of
+              visual disruption without copying the original work.
+            </p>
+            <p>
+              <a href="https://www.cooperhewitt.org/2017/08/30/26363/"
+                >View the Cooper Hewitt reference</a
+              >
+            </p>
+          </div>
         </div>
       </section>
 
@@ -308,7 +526,7 @@
           <a class="resource-card" href="index.html"
             ><span>02 / Try it ↗</span>
             <h3>The storefront</h3>
-            <p>A neutral starting page with a working demo bag.</p></a
+            <p>The UNBOUND product page with a working demo bag.</p></a
           >
           <a class="resource-card" href="styleguide.html"
             ><span>03 / Keep it consistent ↗</span>
@@ -336,11 +554,8 @@
       </section>
     </main>
     <footer class="site-footer wrap">
-      <p>
-        IS117 Brand Studio <span class="footer-separator"> / </span> Neutral
-        starter
-      </p>
-      <p class="footer-tagline">Fictional product. Real design decisions.</p>
+      <p>UNBOUND <span class="footer-separator"> / </span> BRAND-001</p>
+      <p class="footer-tagline">WEAR YOUR OWN WAY. / Fictional demo product.</p>
       <a href="https://github.com/kaw393939/is117-brand-studio#readme"
         >Project README <span aria-hidden="true">↗</span></a
       >
